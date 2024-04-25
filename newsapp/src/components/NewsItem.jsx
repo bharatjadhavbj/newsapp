@@ -6,6 +6,7 @@ const NewsItem = (props) => {
   let { title, description, imageUrl, newsUrl, author, date, source } = props;
   return (
     <>
+    <div className="container row p-3 ">
       <Card className="my-3" style={{ width: "18rem" }}>
         <span
           className="position-absolute top-0  translate-middle badge rounded-pill bg-danger mx-3 "
@@ -43,6 +44,7 @@ const NewsItem = (props) => {
           </Button>
         </Card.Body>
       </Card>
+      </div>
     </>
   );
 };
